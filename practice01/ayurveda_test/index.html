@@ -1,0 +1,47 @@
+<!DOKTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UP-Kompatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurveda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js "></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">アーユルヴェーダ</header>
+        <main>
+            <h2>アーユルヴェーダの診断テストだよ</h2>
+            <form id="shitsumon" name="shitsumon" onsubmit="check(); return false;">
+                <ul>
+                    <li>
+                        <p>朝食に絶対欠かせないものは？</p>
+                        <label><input name="q0" type="radio" value="P" required="" />P.卵料理</label><br />
+                        <label><input name="q0" type="radio" value="V" />V.ヨーグルト</label><br />
+                        <label><input name="q0" type="radio" value="K" />K.納豆</label></li>
+                    <li>
+                        <p>ランチ何食べる？</p>
+                        <label><input name="q1" type="radio" value="P" required="" />P.オムライス</label><br />
+                        <label><input name="q1" type="radio" value="V" />V.グラタン</label><br />
+                        <label><input name="q1" type="radio" value="K" />K.麻婆豆腐</label></li>
+                    <li>
+                        <p>3時のおやつといえば？</p>
+                        <label><input name="q2" type="radio" value="P" required="" />P.プリン</label><br />
+                        <label><input name="q2" type="radio" value="V" />V.レアチーズケーキ</label><br />
+                        <label><input name="q2" type="radio" value="K" />K.大福</label></li>
+                </ul>
+                <input type="submit" value="判定！" class="hantei" /></form>
+            <div id="kekka">ここに結果が出るよ！</div>
+        </main>
+        <footer class="footer">
+            <p>footer</p>
+        </footer>
+
+    </div>
+    <!--wrapper-->
+</body>
+
+</html>
